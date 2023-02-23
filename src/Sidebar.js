@@ -18,12 +18,6 @@ import AddBoxIcon from "@mui/icons-material/AddBox";
 import { useNavigate } from "react-router-dom";
 
 function Sidebar({ toggleTheme }) {
-  const history = useNavigate();
-  function handleAddItem(e) {
-    e.preventDefault();
-
-    history("/addnew");
-  }
   return (
     <Box
       bgcolor="skyblue"
@@ -37,7 +31,7 @@ function Sidebar({ toggleTheme }) {
       }}
     >
       <List>
-        <ListItem disablePadding onClick={handleAddItem}>
+        <ListItem disablePadding>
           <ListItemButton component="a" href="/addnew">
             <ListItemIcon>
               <AddBoxIcon />

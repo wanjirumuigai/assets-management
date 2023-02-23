@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function AssetSearch(props) {
-  const [searchItem, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
 
   function handleSearch(event) {
     event.preventDefault();

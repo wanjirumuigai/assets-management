@@ -7,6 +7,7 @@ import DevicesIcon from "@mui/icons-material/Devices";
 import { Box } from "@mui/system";
 import SettingsIcon from "@mui/icons-material/Settings";
 import LogoutIcon from "@mui/icons-material/Logout";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const StyledToolBar = styled(Toolbar)({
@@ -32,18 +33,26 @@ function Navbar() {
             IT Assets Management System
           </Typography>
           <Box>
-            <IconButton href="/" alt="home">
-              <HomeIcon />
-            </IconButton>
-            <IconButton href="/addnew">
-              <AddIcon />
-            </IconButton>
-            <IconButton href="/assets">
-              <DevicesIcon />
-            </IconButton>
-            <IconButton>
-              <SettingsIcon />
-            </IconButton>
+            <NavLink to="/" style={{ textDecoration: "none" }}>
+              <IconButton>
+                <HomeIcon />
+              </IconButton>
+            </NavLink>
+            <NavLink to="/addnew" style={{ textDecoration: "none" }}>
+              <IconButton>
+                <AddIcon />
+              </IconButton>
+            </NavLink>
+            <NavLink to="/assets" style={{ textDecoration: "none" }}>
+              <IconButton>
+                <DevicesIcon />
+              </IconButton>
+            </NavLink>
+            <NavLink to="/settings" style={{ textDecoration: "none" }}>
+              <IconButton>
+                <SettingsIcon />
+              </IconButton>
+            </NavLink>
           </Box>
           <Box>
             <IconButton>

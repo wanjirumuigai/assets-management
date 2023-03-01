@@ -27,6 +27,7 @@ In a new terminal, run `npm start`. This will run your React app on port `3000`
 - [@BarakaIsaac](https://github.com/BarakaIsaac)
 - [@jesse753](https://github.com/jesse753)
 - [@wanjirumuigai](https://github.com/wanjirumuigai)
+- [@GabrielW13Nai](https://github.com/GabrielW13Nai)
 
 
 
